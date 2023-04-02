@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "bip39": "^3.1.0",
+    "ethereumjs-wallet": "^1.0.2",
     "ethers": "^5.7.2"
   }
 }
