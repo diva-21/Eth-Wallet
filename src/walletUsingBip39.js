@@ -6,7 +6,7 @@ const { Wallet, hdkey } = require("ethereumjs-wallet");
 // got this using bip39 from console
 const mnemonicFromBip39 =
   "fiction search sock valid task delay raccoon siege ceiling leaf crime view";
-async function gg() {
+async function createWallFromBip() {
   const seed = await bip39.mnemonicToSeed(mnemonicFromBip39);
   // buffer to hex rep string
   console.log("Seed:", seed.toString("hex"));
@@ -17,4 +17,4 @@ async function gg() {
   console.log("privateKey: ", wallet.getPrivateKeyString());
   console.log("address: ", wallet.getAddressString());
 }
-gg();
+createWallFromBip();
